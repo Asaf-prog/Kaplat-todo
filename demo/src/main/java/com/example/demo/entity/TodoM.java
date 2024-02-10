@@ -2,11 +2,15 @@ package com.example.demo.entity;
 
 import com.example.demo.todo.Status;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection = "todos")
 public class TodoM { // MongoDB entity
     @Id
+   // @Field("rawid")
+   // @Indexed(unique = true)
     private String id;
 
     private String title;

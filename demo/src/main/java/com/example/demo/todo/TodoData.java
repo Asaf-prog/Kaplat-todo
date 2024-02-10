@@ -6,6 +6,8 @@ public class TodoData {
     private long date;
     private TodoStatus status;
 
+    private String content;
+
     public int getId() {
         return id;
     }
@@ -28,6 +30,14 @@ public class TodoData {
 
     public void setStatus(TodoStatus status) {
         this.status = status;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public enum TodoStatus {

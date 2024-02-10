@@ -8,9 +8,8 @@ import jakarta.persistence.*;
 public class TodoP { // Postgres entity
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "rawid")
-    private int id;
+    private int rawid;
 
     @Column(name = "title")
     private String title;
@@ -34,11 +33,11 @@ public class TodoP { // Postgres entity
     }
 
     public int getId() {
-        return id;
+        return rawid;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.rawid = id;
     }
 
     public String getTitle() {
@@ -76,7 +75,7 @@ public class TodoP { // Postgres entity
     @Override
     public String toString() {
         return "Todo{" +
-               "id=" + id +
+               "id=" + rawid +
                ", title='" + title + '\'' +
                ", content='" + content + '\'' +
                ", duedate=" + duedate +
