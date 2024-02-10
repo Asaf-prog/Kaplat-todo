@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.TodoDTO;
+import com.example.demo.dto.TodoMDTO;
 import com.example.demo.entity.TodoM;
 import com.example.demo.entity.TodoP;
 import com.example.demo.repository.TodoMongo;
@@ -9,6 +10,8 @@ import com.example.demo.todo.PersistenceMethod;
 import com.example.demo.todo.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -186,6 +189,29 @@ public class TodoServiceImpl implements TodoService {
     @Override
     public void saveTodoToMongo(TodoM todo) {
         todoMongo.save(todo);
+    }
+
+    @Override
+    public void changeIdToCorrectId(List<TodoM> todoMList) {
+        for (TodoM todoM : todoMList) {
+           Optional<TodoP> todoP = todoPostgres.findByTitle(todoM.getTitle());
+           todoP.ifPresent(todoP1 -> todoM.setId(String.valueOf(todoP1.getId())));
+        }
+    }
+
+    @Override
+    public List<TodoMDTO> convertTodoMToDto(List<TodoM> listDataAfterFilter) {
+        List<TodoMDTO> todoDTOList = new ArrayList<>();
+        for (TodoM todoM : listDataAfterFilter) {
+            TodoMDTO todoDTO = new TodoMDTO();
+            todoDTO.setId(Integer.valueOf(todoM.getId()));
+            todoDTO.setTitle(todoM.getTitle());
+            todoDTO.setContent(todoM.getContent());
+            todoDTO.setDuedate(todoM.getDuedate());
+            todoDTO.setState(todoM.getState());
+            todoDTOList.add(todoDTO);
+        }
+        return todoDTOList;
     }
 
 }

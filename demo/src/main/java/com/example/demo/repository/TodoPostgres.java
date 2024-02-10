@@ -11,4 +11,5 @@ public interface TodoPostgres extends JpaRepository<TodoP,Integer> {
     Optional<TodoP> findTopByOrderByIdDesc();
     List<TodoP> findAll();
     void deleteById(int id);
+    Optional<TodoP> findByTitle(String title);
 }

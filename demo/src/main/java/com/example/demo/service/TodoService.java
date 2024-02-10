@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.TodoDTO;
+import com.example.demo.dto.TodoMDTO;
 import com.example.demo.entity.TodoM;
 import com.example.demo.entity.TodoP;
 import com.example.demo.todo.PersistenceMethod;
@@ -20,5 +21,7 @@ public interface TodoService {
     String getIdBuyTitle(String title, int id);
     void saveTodoToPostgres(TodoP todoP);
     void saveTodoToMongo(TodoM todo);
+    void changeIdToCorrectId(List<TodoM> todoMList);
+    List<TodoMDTO> convertTodoMToDto(List<TodoM> listDataAfterFilter);
 
 }

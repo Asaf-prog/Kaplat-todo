@@ -30,3 +30,103 @@
 10-02-2024 19:02:27.095 INFO: Removing Todo id 3 | request #1
 10-02-2024 19:02:27.172 INFO: Total TODOs count for state PENDING is 2 | request #1
 10-02-2024 19:02:27.253 INFO: Total TODOs count for state PENDING is 2 | request #1
+10-02-2024 20:19:53.431 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:19:53.539 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:19:53.798 ERROR: Error: TODO with the title [New Year] already exists in the system | request #1
+10-02-2024 20:19:53.890 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:19:53.980 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:19:54.064 INFO: Total TODOs count for state DONE is 0 | request #1
+10-02-2024 20:19:54.267 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:19:54.362 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:19:54.507 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:19:54.611 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:19:54.704 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:19:54.887 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:19:54.985 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:19:55.052 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:21:11.748 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:23:00.375 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:23:13.487 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:23:33.475 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:25:36.144 INFO: Extracting todos content. Filter: PENDING | Sorting by: ID | request #1
+10-02-2024 20:26:10.743 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:26:21.405 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:27:54.189 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:27:54.372 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:27:54.675 ERROR: Error: TODO with the title [New Year] already exists in the system | request #1
+10-02-2024 20:27:54.753 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:27:54.828 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:27:54.911 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:27:55.251 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:27:55.353 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:27:55.551 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:27:55.653 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:27:55.774 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:27:55.917 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:27:55.993 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:27:56.099 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:28:34.833 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:30:17.485 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:30:17.679 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:30:17.958 ERROR: Error: TODO with the title [New Year] already exists in the system | request #1
+10-02-2024 20:30:18.046 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:30:18.134 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:30:18.212 INFO: Total TODOs count for state DONE is 0 | request #1
+10-02-2024 20:30:18.556 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:30:18.647 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:30:18.812 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:30:18.898 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:30:18.984 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:30:19.115 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:30:19.211 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:30:19.306 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:31:32.939 ERROR: Error: TODO with the title [New Year] already exists in the system | request #1
+10-02-2024 20:31:55.798 ERROR: Error: TODO with the title [New Year] already exists in the system | request #1
+10-02-2024 20:33:35.871 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:33:36.028 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:33:36.320 ERROR: Error | request #1
+10-02-2024 20:33:36.407 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:33:36.515 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:33:36.579 INFO: Total TODOs count for state DONE is 0 | request #1
+10-02-2024 20:33:36.860 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:33:36.956 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:33:37.119 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:33:37.210 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:33:37.303 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:33:37.432 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:33:37.517 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:33:37.613 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:46:21.826 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:46:31.908 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:48:56.502 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:48:56.778 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:48:57.177 ERROR: Error | request #1
+10-02-2024 20:48:57.267 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:48:57.359 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 20:48:57.445 INFO: Total TODOs count for state DONE is 0 | request #1
+10-02-2024 20:48:57.797 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:48:57.877 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 20:48:58.204 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:48:58.289 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:48:58.412 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 20:48:58.548 INFO: Removing Todo id 3 | request #1
+10-02-2024 20:48:58.644 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:48:58.731 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 20:50:45.031 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 20:51:13.459 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 21:03:02.127 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 21:03:11.070 INFO: Removing Todo id 3 | request #1
+10-02-2024 21:04:10.563 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 21:04:10.750 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 21:04:11.055 ERROR: Error | request #1
+10-02-2024 21:04:11.145 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 21:04:11.237 INFO: Total TODOs count for state ALL is 2 | request #1
+10-02-2024 21:04:11.319 INFO: Total TODOs count for state DONE is 0 | request #1
+10-02-2024 21:04:11.748 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 21:04:11.861 INFO: Total TODOs count for state DONE is 1 | request #1
+10-02-2024 21:04:12.027 INFO: Creating new TODO with Title [Buy Groceries] | request #1
+10-02-2024 21:04:12.109 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 21:04:12.226 INFO: Extracting todos content. Filter: PENDING | Sorting by: TITLE | request #1
+10-02-2024 21:04:12.371 INFO: Removing Todo id 3 | request #1
+10-02-2024 21:04:12.470 INFO: Total TODOs count for state PENDING is 1 | request #1
+10-02-2024 21:04:12.576 INFO: Total TODOs count for state PENDING is 1 | request #1

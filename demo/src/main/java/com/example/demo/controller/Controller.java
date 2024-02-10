@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.TodoDTO;
+import com.example.demo.dto.TodoMDTO;
 import com.example.demo.entity.TodoM;
 import com.example.demo.entity.TodoP;
 import com.example.demo.error.ErrorMessage;
@@ -129,7 +130,8 @@ public class Controller {
 
         if (todoService.statusExistInDb(todo.getTitle())) {
             return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(new ErrorMessage("Error: TODO with the title [" + todo.getTitle() + "] already exists in the system"));
+                    .body(new ErrorMessage("Error"));
+            //: TODO with the title [" + todo.getTitle() + "] already exists in the system
         }
         LocalDateTime localDateTime = LocalDateTime.now();
 
@@ -188,7 +190,7 @@ public class Controller {
 
     @GetMapping("/content")
     public ResponseEntity<?> getTodoData(@RequestParam (name = "status") String status,
-                                         @RequestParam(name = "howToSort", required = false) String howToSort,
+                                         @RequestParam(name = "sortBy", required = false) String howToSort,
                                          @RequestParam(name = "persistenceMethod")PersistenceMethod persistenceMethod) {
 
         if(Arrays.stream(TodoData.TodoStatus.values()).noneMatch(tds -> tds.toString().equals(status)) && !status.equals("ALL"))
@@ -276,8 +278,9 @@ public class Controller {
 
             addRequestDuration(start);
             loggerTodo.info("Extracting todos content. Filter: {} | Sorting by: {}", status, howToSort);
-
-            return ResponseEntity.ok().body(new resultMessage(listDataAfterFilter));
+            todoService.changeIdToCorrectId(listDataAfterFilter);
+            List<TodoMDTO> todoDTOList = todoService.convertTodoMToDto(listDataAfterFilter);
+            return ResponseEntity.ok().body(new resultMessage(todoDTOList));
         }
     }
 
@@ -317,10 +320,13 @@ public class Controller {
 
         if (status.equals(TodoData.TodoStatus.DONE.name())) {
             updateTodo.setState(Status.DONE);
+            updateTodoM.setState(Status.DONE);
         } else if (status.equals(TodoData.TodoStatus.PENDING.name())) {
             updateTodo.setState(Status.PENDING);
+            updateTodoM.setState(Status.PENDING);
         } else if (status.equals(TodoData.TodoStatus.LATE.name())) {
             updateTodo.setState(Status.LATE);
+            updateTodoM.setState(Status.LATE);
         } else {
             addRequestDuration(startTime);
             loggerTodo.info("Update TODO Id [{}] state to {}", id, status);
