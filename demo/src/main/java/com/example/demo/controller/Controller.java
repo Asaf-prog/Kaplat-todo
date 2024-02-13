@@ -33,7 +33,7 @@ public class Controller {
 
     @Autowired
     public Controller (TodoService todoService) {
-        this.todoService =todoService;
+        this.todoService = todoService;
     }
 
     public static Integer counter = 1;

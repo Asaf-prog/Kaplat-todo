@@ -1,6 +1,5 @@
 package com.example.demo.dto;
 
-import com.example.demo.todo.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.util.Date;

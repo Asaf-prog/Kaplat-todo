@@ -1,0 +1,20 @@
+version: "3"
+services:
+  postgres:
+    image: theshultz/kaplat-postgres-instance:latest
+#to expose postgres container externally
+    ports:
+      - "5432:5432"
+  mongo:
+    image: theshultz/kaplat-mongo-instance:latest
+#to expose mongo container externally
+    ports:
+      - "27017:27017"
+  app:
+    image:  vvp2/kaplat-server-compose:1.1
+    restart: on-failure:2
+    ports:
+      - "3769:9285"
+    depends_on:
+      - postgres
+      - mongo
